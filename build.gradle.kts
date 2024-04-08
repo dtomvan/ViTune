@@ -10,6 +10,8 @@ plugins {
     alias(libs.plugins.android.lint) apply false
     alias(libs.plugins.ksp) apply false
     alias(libs.plugins.detekt)
+
+    id("com.gtramontina.ghooks.gradle") version "2.0.0" // version omitted, won't really ever change...
 }
 
 val clean by tasks.registering(Delete::class) {
